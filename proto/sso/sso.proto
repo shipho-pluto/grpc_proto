@@ -27,7 +27,7 @@ message LoginRequest {
 }
 
 message LoginResponse {
-    string tocken = 1;
+    string token = 1;
 }
 
 message IsAdminRequest {

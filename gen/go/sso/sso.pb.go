@@ -179,7 +179,7 @@ func (x *LoginRequest) GetAppId() int32 {
 
 type LoginResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
-	Tocken        string                 `protobuf:"bytes,1,opt,name=tocken,proto3" json:"tocken,omitempty"`
+	Token         string                 `protobuf:"bytes,1,opt,name=token,proto3" json:"token,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -214,9 +214,9 @@ func (*LoginResponse) Descriptor() ([]byte, []int) {
 	return file_sso_sso_proto_rawDescGZIP(), []int{3}
 }
 
-func (x *LoginResponse) GetTocken() string {
+func (x *LoginResponse) GetToken() string {
 	if x != nil {
-		return x.Tocken
+		return x.Token
 	}
 	return ""
 }
@@ -410,9 +410,9 @@ const file_sso_sso_proto_rawDesc = "" +
 	"\fLoginRequest\x12\x14\n" +
 	"\x05email\x18\x01 \x01(\tR\x05email\x12\x1a\n" +
 	"\bpassword\x18\x02 \x01(\tR\bpassword\x12\x15\n" +
-	"\x06app_id\x18\x03 \x01(\x05R\x05appId\"'\n" +
-	"\rLoginResponse\x12\x16\n" +
-	"\x06tocken\x18\x01 \x01(\tR\x06tocken\")\n" +
+	"\x06app_id\x18\x03 \x01(\x05R\x05appId\"%\n" +
+	"\rLoginResponse\x12\x14\n" +
+	"\x05token\x18\x01 \x01(\tR\x05token\")\n" +
 	"\x0eIsAdminRequest\x12\x17\n" +
 	"\auser_id\x18\x01 \x01(\x03R\x06userId\",\n" +
 	"\x0fIsAdminResponse\x12\x19\n" +
